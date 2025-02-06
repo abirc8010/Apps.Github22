@@ -402,9 +402,9 @@ export class ExecuteBlockActionHandler {
                     let access_token = await getAccessTokenForUser(this.read, user, this.app.oauth2Config) as IAuthData;
 
                     const filter = {
-                        filter : ModalsEnum.CREATED_ISSUE_FILTER,
-                        state : ModalsEnum.ISSUE_STATE_OPEN,
-                        sort : ModalsEnum.ISSUE_SORT_CREATED
+                        filter : ModalsEnum.CREATED_PULL_REQUEST_FILTER,
+                        state : ModalsEnum.PULL_REQUEST_STATE_OPEN,
+                        sort : ModalsEnum.PULL_REQUEST_SORT_CREATED
                     }
 
                     const pullRequestModal = await userPullRequestsModal({
